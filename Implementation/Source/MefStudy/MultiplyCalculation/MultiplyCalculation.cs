@@ -5,14 +5,14 @@ using System.Text;
 
 using MyMefContract;
 
-namespace ReduceCalculation
+namespace MultiplyCalculation
 {
-    [CalculationExport(CalculationType = CalculationType.Reduce)]
-    public class ReduceCalculation : ICalculator
+    [AdvancedCalculationExport(CalculationType = CalculationType.Multiply)]
+    public class MultiplyCalculation : ICalculator
     {
         public double GetNumber(int op1, int op2)
         {
-            return op1 - op2;
+            return op1 * op2;
         }
     }
 }
