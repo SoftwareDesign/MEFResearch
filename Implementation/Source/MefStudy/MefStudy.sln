@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMefSample", "SimpleMefSample\SimpleMefSample.csproj", "{D86B2C91-6B8F-4050-A701-38F6E84ADC0C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMefContract", "MyMefContract\MyMefContract.csproj", "{AE688F15-153E-42D3-8B03-D375AC0804F2}"
@@ -8,6 +8,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{C33B100C-EB6B-433A-9B74-D4BFC190BBE9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddCalculation", "AddCalculation\AddCalculation.csproj", "{35B74399-92E7-4135-8B9E-5D396DB064FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReduceCalculation", "ReduceCalculation\ReduceCalculation.csproj", "{04C84E11-C973-40D6-A989-B185BE66061A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,11 +51,22 @@ Global
 		{35B74399-92E7-4135-8B9E-5D396DB064FD}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{35B74399-92E7-4135-8B9E-5D396DB064FD}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{35B74399-92E7-4135-8B9E-5D396DB064FD}.Release|x86.ActiveCfg = Release|Any CPU
+		{04C84E11-C973-40D6-A989-B185BE66061A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04C84E11-C973-40D6-A989-B185BE66061A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04C84E11-C973-40D6-A989-B185BE66061A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{04C84E11-C973-40D6-A989-B185BE66061A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{04C84E11-C973-40D6-A989-B185BE66061A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{04C84E11-C973-40D6-A989-B185BE66061A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04C84E11-C973-40D6-A989-B185BE66061A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04C84E11-C973-40D6-A989-B185BE66061A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{04C84E11-C973-40D6-A989-B185BE66061A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{04C84E11-C973-40D6-A989-B185BE66061A}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{35B74399-92E7-4135-8B9E-5D396DB064FD} = {C33B100C-EB6B-433A-9B74-D4BFC190BBE9}
+		{04C84E11-C973-40D6-A989-B185BE66061A} = {C33B100C-EB6B-433A-9B74-D4BFC190BBE9}
 	EndGlobalSection
 EndGlobal

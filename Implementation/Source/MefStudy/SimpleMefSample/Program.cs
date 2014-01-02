@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
 using MyMefContract;
@@ -14,9 +15,11 @@ namespace SimpleMefSample
             
             Console.WriteLine("Start calculation.");
 
-            var result = program.Calculator.GetNumber(10, 10);
-            Console.WriteLine("The calculation result: {0}", result);
-
+            foreach (var calculator in program.Calculators)
+            {
+                var result = calculator.Value.GetNumber(10, 10);
+                Console.WriteLine("The {0} calculation result: {1}", calculator.Metadata.CalculationType, result);               
+            }
 
             Console.WriteLine("End Calculation.");
 
@@ -31,7 +34,7 @@ namespace SimpleMefSample
             container.ComposeParts(this);
         }
 
-        [Import]
-        public ICalculator Calculator { get; set; }
+        [ImportMany]
+        public IEnumerable<Lazy<ICalculator, ICaculatorMetadata>> Calculators { get; set; }
     }
 }
